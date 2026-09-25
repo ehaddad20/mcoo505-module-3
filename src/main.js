@@ -9,20 +9,25 @@ async function loadUsers() {
   try {
     const users = await getUsers();
 
-    // map: array of usernames
+    // map
     const usernames = users.map((user) => user.username);
 
-    // filter: users whose username includes the letter "e"
+    // filter
     const usersWithE = users.filter((user) => user.username.includes("e"));
 
-    // reduce: total character count across all usernames
+    // reduce
     const totalChars = usernames.reduce((sum, name) => sum + name.length, 0);
 
-    // spread: copy the array, then extend it with a sample user
+    // spread
     const copiedUsers = [...users];
     const extendedUsers = [
       ...users,
-      { id: 999, name: "Sample User", username: "sampleuser", email: "sample@example.com" },
+      {
+        id: 999,
+        name: "Sample User",
+        username: "sampleuser",
+        email: "sample@example.com",
+      },
     ];
 
     summaryEl.innerHTML = `
