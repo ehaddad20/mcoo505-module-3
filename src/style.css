@@ -1,0 +1,84 @@
+:root {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.5;
+  color: #1f2937;
+  background: #f3f4f6;
+}
+
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.25rem;
+  margin: 0 0 1.5rem;
+  color: #111827;
+}
+
+#summary {
+  background: #e0ecff;
+  border-left: 6px solid #2563eb;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+#summary h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  color: #1e3a8a;
+}
+
+#summary ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+#summary li {
+  padding: 0.15rem 0;
+}
+
+#users {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  color: #111827;
+}
+
+.card p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+  overflow-wrap: anywhere;
+}
+
+.card .formatted {
+  margin-top: 0.75rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #e5e7eb;
+  color: #4b5563;
+  font-style: italic;
+}
+
+.error {
+  grid-column: 1 / -1;
+  background: #fee2e2;
+  color: #991b1b;
+  border-radius: 8px;
+  padding: 1rem;
+}
